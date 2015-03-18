@@ -3,27 +3,79 @@
 // These imports don't generate CSS, but make defined variables, functions,
 // and mixins available for further usage
 
-@import 'base/config_global';
-@import 'base/config_site';
-@import 'base/state';
+@import "base/config_global";
+@import "base/config_site";
+@import "base/state";
 
 // Normalize and document imports ---------------------------------------------
 
-@import 'module/normalize';
-@import 'module/doc';
+@import "module/normalize";
+@import "module/doc";
+
+
+
+
+// Foundation 4 settings -------------------------------------------------------------
+@import "libs/foundation/variables";
+
+// Foundation 4 imports -------------------------------------------------------------
+@import
+  "libs/foundation/components/global",
+  "libs/foundation/components/grid",
+  "libs/foundation/components/visibility",
+  "libs/foundation/components/block-grid",
+  "libs/foundation/components/type",
+  "libs/foundation/components/buttons",
+  "libs/foundation/components/forms",
+  "libs/foundation/components/button-groups",
+  "libs/foundation/components/dropdown-buttons",
+  "libs/foundation/components/split-buttons",
+  "libs/foundation/components/flex-video",
+  "libs/foundation/components/section",
+  "libs/foundation/components/top-bar",
+  "libs/foundation/components/orbit",
+  "libs/foundation/components/reveal",
+  "libs/foundation/components/joyride",
+  "libs/foundation/components/clearing",
+  "libs/foundation/components/alert-boxes",
+  "libs/foundation/components/breadcrumbs",
+  "libs/foundation/components/custom-forms",
+  "libs/foundation/components/keystrokes",
+  "libs/foundation/components/labels",
+  "libs/foundation/components/inline-lists",
+  "libs/foundation/components/pagination",
+  "libs/foundation/components/panels",
+  "libs/foundation/components/pricing-tables",
+  "libs/foundation/components/progress-bars",
+  "libs/foundation/components/side-nav",
+  "libs/foundation/components/sub-nav",
+  "libs/foundation/components/switch",
+  "libs/foundation/components/magellan",
+  "libs/foundation/components/tables",
+  "libs/foundation/components/thumbs",
+  "libs/foundation/components/tooltips",
+  "libs/foundation/components/dropdown";
+
+// Foundation 4 Medium Grid
+@import
+  "libs/foundation/components/grid-5";
+
+
+
+
 
 // Module imports -------------------------------------------------------------
 
-//@import 'module/container';
-//@import 'module/font';
-//@import 'module/text';
-//@import 'module/reporting';
-//@import 'module/form';
-//@import 'module/button';
+//@import "module/container";
+//@import "module/font";
+//@import "module/text";
+//@import "module/reporting";
+//@import "module/form";
+//@import "module/button";
 
 // Vendor imports -------------------------------------------------------------
 
-//@import 'vendor/somestyles';
+//@import "vendor/somestyles";
 
 // Styles ---------------------------------------------------------------------
 
@@ -35,4 +87,4 @@
 //
 // Inline to avoid the request
 
-@import 'module/print';
+@import "module/print";

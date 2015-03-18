@@ -2,17 +2,10 @@
 
 'use strict';
 
-// Underscore is bundled in with ender, so just require it
-// Comment out this line when using the separated Underscore file,
-// eg. when using jQuery
-var _ = require('underscore');
-
 // Document -------------------------------------------------------------------
 
 // When using jQuery, use
-// $(document).ready(function () {
-
-$.domReady(function () {
+jQuery(document).ready(function($) {
 
 	console.log('## Document ready');
 
@@ -32,8 +25,29 @@ $.domReady(function () {
 	//
 	// FUNCTIONS --------------------------------------------------------------
 	//
+    init(); 
 
-	// function doSomething () {}
+    // call all custom functions
+	function init() {
+		userAgentCheck();
+		testThis();
+	}
+ 	
+	function userAgentCheck() {
+     var b = document.documentElement;
+      b.setAttribute('data-useragent',  navigator.userAgent);
+      b.setAttribute('data-platform', navigator.platform );
+      b.className += ((!!('ontouchstart' in window) || !!('onmsgesturechange' in window))?' touch':'');
+	
+	  console.log('userAgent Checked');
+	} // end userAgentCheck();
+
+
+	function testThis() {
+		$( 'p' ).prepend( '<strong>Hello </strong>' );
+	} // end testThis();
+
+
 
 });
 
