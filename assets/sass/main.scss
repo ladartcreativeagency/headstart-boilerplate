@@ -68,14 +68,13 @@
 
 //@import "module/container";
 //@import "module/font";
-//@import "module/text";
+  @import "module/text";
 //@import "module/reporting";
-//@import "module/form";
-//@import "module/button";
+  @import "module/form"; 
 
 // Vendor imports -------------------------------------------------------------
 
-//@import "vendor/somestyles";
+  @import "vendor/ionicons/ionicons";
 
 // Styles ---------------------------------------------------------------------
 
