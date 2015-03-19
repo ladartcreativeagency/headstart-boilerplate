@@ -58,3 +58,12 @@
 	font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+%transitionAll3 {
+  transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+}
+
